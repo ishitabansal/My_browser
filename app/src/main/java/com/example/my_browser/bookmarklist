@@ -1,0 +1,29 @@
+package com.example.my_browser;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import java.util.List;
+
+public class bookmarklist extends AppCompatActivity {
+
+    private ListView bmarkslist;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_bookmarklist);
+
+        this.setTitle("Bookmarks");
+        bmarkslist = findViewById(R.id.bkmarkslist);
+        databasehandler databasehelper = new databasehandler(bookmarklist.this);
+        List<String> everyone = databasehelper.getEveryone();
+        ArrayAdapter<String> bmarkarrayadapter = new ArrayAdapter<String>(bookmarklist.this, android.R.layout.simple_list_item_1, everyone);
+        bmarkslist.setAdapter(bmarkarrayadapter);
+
+
+    }
+}
