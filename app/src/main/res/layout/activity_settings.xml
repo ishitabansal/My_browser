@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout android:orientation="vertical" tools:context=".settings" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    -<LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent" android:padding="10dp">
+
+    <TextView android:layout_height="match_parent" android:layout_width="wrap_content" android:layout_weight=".7" android:textStyle="bold" android:textSize="20dp" android:text="Enable Cookies"/>
+
+    <Switch android:layout_height="match_parent" android:layout_width="5dp" android:layout_weight=".3" android:checked="false" android:id="@+id/cookieenable"/>
+
+</LinearLayout>
+
+</LinearLayout>
