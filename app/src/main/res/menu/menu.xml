@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Item" android:icon="@drawable/ic_baseline_arrow_back_24" android:id="@+id/menu_back" app:showAsAction="always"/>
+
+    <item android:title="Item" android:icon="@drawable/ic_baseline_arrow_forward_24" android:id="@+id/menu_frwrd" app:showAsAction="always"/>
+
+    <item android:title="Item" android:icon="@drawable/ic_baseline_bookmark_border_24" android:id="@+id/makebkmrk" app:showAsAction="always"/>
+
+    <item android:title="History" android:icon="@drawable/ic_baseline_refresh_24" android:id="@+id/accesshistory" app:showAsAction="never"/>
+
+    <item android:title="Bookmarks" android:icon="@drawable/ic_baseline_refresh_24" android:id="@+id/accessbookmarks" app:showAsAction="never"/>
+
+    <item android:title="Settings" android:icon="@drawable/ic_baseline_refresh_24" android:id="@+id/settingsme" app:showAsAction="never"/>
+
+</menu>
